@@ -23,7 +23,6 @@ for (const output of result.outputs) {
   console.log(` ${path.relative(process.cwd(), output.path)}  ${(output.size / 1024).toFixed(1)} KB`);
 }
 
-// Copy public assets to dist root
 const publicDir = path.join(process.cwd(), "public");
 const files = await readdir(publicDir);
 for (const file of files) {
