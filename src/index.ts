@@ -138,7 +138,7 @@ function generateEmbedScript(): string {
   var lavenderBg = dark ? '#352B45' : '#EEE6F5';
   var lavenderText = dark ? '#D4C5E2' : '#9B7EB5';
 
-  fetch(${JSON.stringify(server.url.origin)} + '/api/ring?url=' + encodeURIComponent(host))
+  fetch(${JSON.stringify("https://lanyard.cafe")} + '/api/ring?url=' + encodeURIComponent(host))
     .then(function(r) { return r.json(); })
     .then(function(data) {
       var prev = data.prev, next = data.next, random = data.random;
