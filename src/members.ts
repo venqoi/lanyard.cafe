@@ -1,0 +1,52 @@
+export interface Member {
+  url: string;
+  name: string;
+  buttonUrl?: string;
+}
+
+export const MEMBERS: Member[] = [
+  {
+    url: "https://venqoi.lol",
+    name: "nolan",
+    buttonUrl: "https://cdn.venqoi.lol/Untitled.png",
+  },
+  {
+    url: "https://schuh.wtf",
+    name: "schuh",
+    buttonUrl: "https://cdn.venqoi.lol/schuh.gif",
+  },
+  {
+    url: "https://aureal.dev",
+    name: "aureal",
+    buttonUrl: "https://raw.githubusercontent.com/NPSummers/NPSummers/refs/heads/main/button.png",
+  },
+  {
+    url: "https://akryst.lol",
+    name: "akryst",
+    buttonUrl: "https://akryst.lol/88x31/akryst.gif",
+  },
+  {
+    url: "https://f1sh.v.recipes",
+    name: "f1sh",
+    buttonUrl: "https://raw.githubusercontent.com/NPSummers/NPSummers/refs/heads/main/doesnt_want_to_host_his_own_gif_moli.gif",
+  },
+];
+
+export function getMemberByUrl(url: string): Member | undefined {
+  const hostname = url.replace(/^https?:\/\//, "").replace(/\/.*$/, "");
+  return MEMBERS.find((m) => {
+    const mHost = m.url.replace(/^https?:\/\//, "").replace(/\/.*$/, "");
+    return mHost === hostname;
+  });
+}
+
+export function getAdjacentMembers(currentUrl: string): { prev: Member; next: Member } {
+  const index = MEMBERS.findIndex((m) => m.url === currentUrl);
+  if (index === -1) {
+    const lastIdx = MEMBERS.length - 1;
+    return { prev: MEMBERS[lastIdx]!, next: MEMBERS[0]! };
+  }
+  const prev = MEMBERS[(index - 1 + MEMBERS.length) % MEMBERS.length]!;
+  const next = MEMBERS[(index + 1) % MEMBERS.length]!;
+  return { prev, next };
+}

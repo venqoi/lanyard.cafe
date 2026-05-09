@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+:root {
+  --cream: #e3d9c5;
+  --cream-dark: #F5EDE0;
+  --pink: #F4A7B9;
+  --pink-light: #FCE4EC;
+  --pink-dark: #E8879E;
+  --brown: #C4956A;
+  --brown-light: #E8D5C4;
+  --brown-dark: #A07850;
+  --text: #4A3728;
+  --text-light: #8B7A6A;
+
+  --lavender: #D4C5E2;
+  --lavender-light: #EEE6F5;
+}
+
+:root.dark {
+  --cream: #2C2420;
+  --cream-dark: #3D322C;
+  --pink: #D4849A;
+  --pink-light: #4A2A33;
+  --pink-dark: #F4A7B9;
+  --brown: #A07850;
+  --brown-light: #5A4A40;
+  --brown-dark: #C4956A;
+  --text: #E8D5C4;
+  --text-light: #A09080;
+
+  --lavender: #B5A5C9;
+  --lavender-light: #352B45;
+}
+
+@theme {
+  --font-serif: "DM Serif Display", serif;
+  --font-sans: "Quicksand", sans-serif;
+  --color-cream: var(--cream);
+  --color-cream-dark: var(--cream-dark);
+  --color-pink: var(--pink);
+  --color-pink-light: var(--pink-light);
+  --color-pink-dark: var(--pink-dark);
+  --color-brown: var(--brown);
+  --color-brown-light: var(--brown-light);
+  --color-brown-dark: var(--brown-dark);
+  --color-text: var(--text);
+  --color-text-light: var(--text-light);
+  --color-lavender: var(--lavender);
+  --color-lavender-light: var(--lavender-light);
+}
+
+@layer base {
+  body {
+    @apply m-0 min-h-screen bg-cream font-sans text-text;
+    transition: background-color 0.2s, color 0.2s;
+  }
+}
+
+::selection {
+  @apply bg-pink/30;
+}
