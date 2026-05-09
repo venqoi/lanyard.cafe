@@ -30,6 +30,11 @@ export const MEMBERS: Member[] = [
     name: "f1sh",
     buttonUrl: "https://raw.githubusercontent.com/NPSummers/NPSummers/refs/heads/main/doesnt_want_to_host_his_own_gif_moli.gif",
   },
+    {
+    url: "https://milproject.xyz",
+    name: "mil",
+    buttonUrl: "https://raw.githubusercontent.com/miliegoat/miliegoat.github.io/refs/heads/main/media/catgirlkiss.gif",
+  },
 ];
 
 export function getMemberByUrl(url: string): Member | undefined {
