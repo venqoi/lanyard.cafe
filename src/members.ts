@@ -45,7 +45,11 @@ export const MEMBERS: Member[] = [
     name: "kebabmario/myrixx",
     buttonUrl: "https://kebabmario.dev/assets/IMG_5520.gif",
   },
-
+  {
+    url: "https://kie.ac",
+    name: "kie.ac",
+    buttonUrl: "https://kie.ac/88x31/button.png"
+  }
 ];
 
 export function getMemberByUrl(url: string): Member | undefined {
