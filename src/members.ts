@@ -30,21 +30,22 @@ export const MEMBERS: Member[] = [
     name: "f1sh",
     buttonUrl: "https://raw.githubusercontent.com/NPSummers/NPSummers/refs/heads/main/doesnt_want_to_host_his_own_gif_moli.gif",
   },
-    {
+  {
     url: "https://milproject.xyz",
     name: "mil",
     buttonUrl: "https://raw.githubusercontent.com/miliegoat/miliegoat.github.io/refs/heads/main/media/catgirlkiss.gif",
+  },
+  {
+      url: "https://plxne.com",
+      name: "Ranger",
+      buttonUrl: "https://files.plxne.com/raw/nRH5kX.gif",
   }, 
-    {
+  {
     url: "https://kebabmario.dev",
     name: "kebabmario/myrixx",
     buttonUrl: "https://kebabmario.dev/assets/IMG_5520.gif",
   },
-    {
-      url: "https://plxne.com",
-      name: "Ranger",
-      buttonUrl: "https://files.plxne.com/raw/nRH5kX.gif",
-    },
+
 ];
 
 export function getMemberByUrl(url: string): Member | undefined {
