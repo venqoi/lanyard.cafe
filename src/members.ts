@@ -49,6 +49,11 @@ export const MEMBERS: Member[] = [
     url: "https://kie.ac",
     name: "kie.ac",
     buttonUrl: "https://kie.ac/88x31/button.png"
+  },
+  {
+    url: "https://nichind.dev",
+    name: "nichind",
+    buttonUrl: "https://nichind.dev/88x31.gif"
   }
 ];
 
