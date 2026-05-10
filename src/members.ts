@@ -34,6 +34,11 @@ export const MEMBERS: Member[] = [
     url: "https://milproject.xyz",
     name: "mil",
     buttonUrl: "https://raw.githubusercontent.com/miliegoat/miliegoat.github.io/refs/heads/main/media/catgirlkiss.gif",
+  }, 
+    {
+    url: "https://kebabmario.dev",
+    name: "kebabmario/myrixx",
+    buttonUrl: "https://kebabmario.dev/assets/IMG_5520.gif",
   },
     {
       url: "https://plxne.com",
