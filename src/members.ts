@@ -59,6 +59,11 @@ export const MEMBERS: Member[] = [
     url: "https://brookerslyn.space",
     name: "brook",
     buttonUrl: "https://cdn.brookerslyn.space/Screenshot%202026-05-10%20222237(1)(1).png"
+  },
+  {
+    url: "https://madballistic.xyz",
+    name: "madballistic",
+    buttonUrl: "https://madballistic.xyz/88x31.png"
   }
 ];
 
